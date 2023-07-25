@@ -70,6 +70,7 @@ function createFeatures(countryData) {
             mouseout: resetHighlight,
             click: zoomToFeature
         });
+        // countryApi(feature.properties.ADMIN);
     }
 
     function style(feature) {
@@ -89,7 +90,14 @@ function createFeatures(countryData) {
     }).addTo(map);
 }
 
-
+// function countryApi(country) {
+//     var url = 'http://localhost:5000/api/countries/' + country
+//     fetch(url)
+//     .then((res) => { return res.json(); })
+//     .then((apiData) => {
+//         console.log(apiData);
+//     });
+// }
 
 
 
