@@ -21,6 +21,22 @@
         
     </head>
     <body>
+        <div class="navbar">
+            <a href="localhost:5500/web_app/index.html">Home</a>
+            <a href="https://github.com/CriscentWolf/UPENN_Group2_Project3/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <div class="map-dropdown">
+                <td>Choropleth Map</td>    
+                <td>
+                <select id="map-color" class="buttons">
+                    <option></option>
+                    <option>population</option>
+                    <option>population_density</option>
+                    <!-- <option>all_gdps</option> -->
+                </select>
+                </td>
+                <td><button id='btnApply'>Apply</button></td>
+            </div>
+        </div> 
         <div id='map'></div>
         <script type="text/javascript" src="static/js/app.js"></script>
     </body>

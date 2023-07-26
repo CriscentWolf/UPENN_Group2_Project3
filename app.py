@@ -1,10 +1,12 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import psycopg2
 import psycopg2.extras
 from dotenv import load_dotenv
 import os
 
 app = Flask(__name__)
+CORS(app)
 
 load_dotenv('cred.env')  # replace '.env' with 'cred.env'
 
