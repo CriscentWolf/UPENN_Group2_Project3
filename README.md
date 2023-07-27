@@ -1,7 +1,7 @@
 # UPENN Bootcamp Group 2 Project 3
 Group members: Christian Vasko, Ryan Fowler, Samuel Crain, Naeemah Abdul-Malik
-![image](https://github.com/CriscentWolf/UPENN_Group2_Project3/assets/79270608/9027cb39-5c51-4403-94af-6fcebb1e57ed)
 
+![image](https://github.com/CriscentWolf/UPENN_Group2_Project3/assets/79270608/9027cb39-5c51-4403-94af-6fcebb1e57ed)
 
 ## Contents:
 - Python Flask API
