@@ -156,8 +156,10 @@ function countryApi(country, layer) {
                 <h4>Largest City: ${apiData.largest_city}</h4>
                 <ul>Official Language: ${apiData.official_language}</ul>
                 <ul>Population: ${apiData.population}</ul>
+                <ul>Urban Percentage: ${apiData.urban_pct}%</ul>
                 <ul>Person per km<sup>2</sup>: ${apiData.density_p_km2}</ul>
                 <ul>GDP: ${apiData.gdp}</ul>
+                <ul>GDP per Capita: ${apiData.gdp_per_capita}</ul>
                 <ul>Gas Price: ${apiData.gasoline_price}</ul>
                 <ul>Minimum Wage: ${apiData.minimum_wage}</ul>
                 <ul>Land Area (km<sup>2</sup>): ${apiData.land_area_km2}</ul>`
