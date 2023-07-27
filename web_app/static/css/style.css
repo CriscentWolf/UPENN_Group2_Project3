@@ -45,3 +45,8 @@ html {
   padding: 14px 16px;
   text-decoration: none;
 }
+
+#graph {
+  float: center;
+  text-align: center;
+}

@@ -1,13 +1,3 @@
-/*
-
-Checklist of what needs to still be done.
-----------------------------------------
-- insert api calls - status: 0
-- adjust the style - status: 0
-- test color scale - status: 0
-
-*/
-
 var mapColor = document.querySelector('#map-color');
 document.querySelector('#btnApply').addEventListener('click', layerColor);
 
@@ -17,7 +7,6 @@ function init() {
         return res.json();
     })
     .then((data) => {
-        // console.log(data);
         createFeatures(data.features);
     });
 }
@@ -34,7 +23,6 @@ var map = L.map("map", {
 });
 
 
-// Test the colors
 function layerColor() {
 
     mapLayer.clearLayers()
@@ -47,8 +35,6 @@ function layerColor() {
             fetch('countries.geojson')
                 .then(res => res.json())
                 .then(data => {
-                    console.log(apiData)
-                    console.log(data.features)
 
                     if (mapColor.value == 'population') {
                         for (var i = 0; i < apiData.length; i++) {
@@ -72,30 +58,6 @@ function layerColor() {
                             } 
                             } 
                         }
-                        console.log(data)
-                    // function getColor(d) {
-                    //     if (mapColor.value == 'population') {
-                    //         data.forEach(data => {
-                    //         if (data.country == d) {
-                    //             console.log(data.country, data.population)
-                    //             // return countryData.population > 1000000000 ? '#800026' :
-                    //             // countryData.population > 500  ? '#BD0026' :
-                    //             // countryData.population > 200  ? '#E31A1C' :
-                    //             // countryData.population > 100  ? '#FC4E2A' :
-                    //             // countryData.population > 50   ? '#FD8D3C' :
-                    //             // countryData.population > 20   ? '#FEB24C' :
-                    //             // countryData.population > 10   ? '#FED976' :
-                    //                                 // '#FFEDA0';
-                    //         }
-                    //     })} 
-                    // }
-
-                    // function onEachFeature(feature, layer) {
-                    //     feature = layer.feature = layer.feature || {}; // Initialize feature
-                    //     feature.type = feature.type || "Feature"; // Initialize feature.type
-                    //     var props = feature.properties = feature.properties || {}; // Initialize feature.properties
-                    //     layer.feature.properties.population = population;
-                    // }
 
                     function style(feature) {
                         return {
@@ -105,18 +67,8 @@ function layerColor() {
                             color: 'black',
                             fillOpacity: 0.5
                         };
-                        // if (mapColor.value == 'population_density') {
-                        //     return {
-                        //         fillColor: colorScale(feature.properties.density_p_km2),
-                        //         weight: 1,
-                        //         opacity: 1,
-                        //         color: 'black',
-                        //         fillOpacity: 0.5
-                        //     };}
-                        // else return;
                     }
                     mapLayer = L.geoJSON(data.features, {
-                        // onEachFeature: onEachFeature,
                         style: style
                     }).addTo(mapLayer)
                 
@@ -179,7 +131,6 @@ function createFeatures(countryData) {
 
     function style(feature) {
         return {
-            // fillColor needs to be changed to api call data
             fillColor: 'orange',
             weight: 1,
             opacity: 0,
