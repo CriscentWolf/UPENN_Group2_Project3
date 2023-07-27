@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Group 2 Project 3 Web App</title>
+        <link rel = 'icon' href = 'https://avatars.githubusercontent.com/u/70291621?s=200&v=4' type = 'image/x-icon'>
+        
+        <!-- D3 library -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+
+        <!-- Plotly -->
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+       
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+        <!-- Our CSS -->
+        <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+        <script type="application/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+    </head>
+    <body>
+        <!-- Navbar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="graphs.html">Top 10's</a>
+            <a href="https://github.com/CriscentWolf/UPENN_Group2_Project3/" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <div class="map-dropdown">
+                <td>Top 10 Graphs</td>    
+                <td>
+                <select id="graph-sel" class="buttons">
+                    <option></option>
+                    <option>top10_population</option>
+                    <option>top10_population_density</option>
+                </select>
+                </td>
+                <td><button id='btnApply'>Apply</button></td>
+            </div>
+        </div> 
+        <!-- Content -->
+        <h1 id="graph"></h1>
+        <div id="plot"></div>
+        <script type="text/javascript" src="static/js/graphs.js"></script>
+    </body>
+</html>
