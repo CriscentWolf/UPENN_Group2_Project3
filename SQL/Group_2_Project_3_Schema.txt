@@ -1,0 +1,47 @@
+-- Group 2 Project 3 Schema
+
+-- Drop Table If Exists world_data;
+
+-- Create Table world_data (
+-- 	country Varchar,
+-- 	density_p_km2 Int,
+-- 	abbreviation Varchar,
+-- 	agricultural_land Float,
+-- 	land_area_km2 Int,
+-- 	armed_forces_size Int,
+-- 	armed_forces_pct Float,
+-- 	birth_rate Float,
+-- 	calling_code Int,
+-- 	capital_major_city Varchar,
+-- 	co2_emissions Int,
+-- 	cpi Float,
+-- 	cpi_change Float,
+-- 	currency_code Varchar,
+-- 	fertility_rate Float,
+-- 	forested_area Float,
+-- 	gasoline_price Money,
+-- 	gdp Money,
+-- 	gdp_per_capita Money,
+-- 	gross_primary_education_enrollment Float,
+-- 	gross_tertiary_education_enrollment Float,
+-- 	infant_mortality Float,
+-- 	largest_city Varchar,
+-- 	life_expectancy Float,
+-- 	maternal_mortality_ratio Int,
+-- 	minimum_wage Money,
+-- 	official_language Varchar,
+-- 	out_of_pocket_health_expenditure Float,
+-- 	physicians_per_thousand Float,
+-- 	population Int,
+-- 	population_labor_force_participation Float,
+-- 	tax_revenue Float,
+-- 	total_tax_rate Float,
+-- 	unemployment_rate Float,
+-- 	urban_population Int,
+-- 	urban_pct Float,
+-- 	latitude Float,
+-- 	longitude Float
+-- )
+-- ;
+
+-- Select * From world_data;

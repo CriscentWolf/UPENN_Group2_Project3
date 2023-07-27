@@ -1,0 +1,64 @@
+-- Group 2 Project 3 Queries
+
+-- Select * From world_data;
+
+-- Select sum(population)
+-- From world_data
+-- ;
+
+-- **Top 10 Countries with the Highest Population**
+-- Select country, population
+-- From world_data
+-- Order By population Desc
+-- Limit 10
+-- ;
+
+-- **Top 10 Countries with the Highest GDP**
+-- Select country, gdp
+-- From world_data
+-- Order By gdp Desc
+-- Limit 10
+-- ;
+
+-- **Top 10 Richest Countries in the World Based on GDP Per Capita**
+-- Select country, gdp, population, gdp_per_capita
+-- From world_data
+-- Order By gdp_per_capita Desc
+-- Limit 10
+-- ;
+
+-- **Top 10 Poorest Countries in the World Based on GDP Per Capita**
+-- Select country, gdp, population, gdp_per_capita
+-- From world_data
+-- Order By gdp_per_capita Asc
+-- Limit 10
+-- ;
+
+-- **Top 10 Countries Based on Official Language
+-- Select official_language, count(official_language) as total_countries
+-- From world_data
+-- Group By official_language
+-- Order By total_countries Desc
+-- Limit 10
+-- ;
+
+-- **Top 10 Countries with the Highest Urban Population Percentage**
+-- Select country, population, urban_population, urban_pct, gdp_per_capita
+-- From world_data
+-- Order By urban_pct Desc, gdp_per_capita Desc
+-- Limit 10
+-- ;
+
+-- **Top 10 Countries with the Highest Labor Force**
+-- Select country, population, population_labor_force_participation, gdp_per_capita
+-- From world_data
+-- Order By population_labor_force_participation Desc
+-- Limit 10
+-- ;
+
+-- **Top 10 Countries with Highest Armed Forces Percentage**
+-- Select country, population, armed_forces_size, armed_forces_pct, gdp_per_capita
+-- From world_data
+-- Order By armed_forces_pct Desc
+-- Limit 10
+-- ;
