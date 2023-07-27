@@ -123,7 +123,7 @@ def top10_population_density():
 def top10_population():
     conn = connect_db()
     cur = conn.cursor(cursor_factory = psycopg2.extras.DictCursor)
-    cur.execute("SELECT country, population FROM world_data ORDER BY population DESC LIMIT 10")
+    cur.execute("SELECT country, population FROM world_data WHERE population IS NOT NULL ORDER BY population DESC LIMIT 10")
     rows = cur.fetchall()
 
     cur.close()
